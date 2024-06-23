@@ -1,0 +1,15 @@
+kind: PodChaos
+apiVersion: chaos-mesh.org/v1alpha1
+metadata:
+  namespace: pucminas
+  name: exp-9
+spec:
+  selector:
+    namespaces:
+      - pucminas
+    labelSelectors:
+      app: httpbin
+  mode: fixed-percent
+  value: '75'
+  action: pod-failure
+  duration: '2m'
