@@ -1,5 +1,6 @@
-# SREO2 - Turma 1
-## Teste com argoCD.
+# SRE - PUC Minas
+## Experimentos Chaos-Mesh.
+## Projeto: https://chaos-mesh.org/docs/define-chaos-experiment-scope/
 
 ```shell
 ├── README.md
