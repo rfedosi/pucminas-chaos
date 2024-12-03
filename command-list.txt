@@ -1,0 +1,119 @@
+  145  helm list -n otel
+  146  helm uninstall otel-demo
+  147  helm uninstall otel-demo -n otel
+  148  helm list -n otel
+  149  k get pods -n otel | grep -vi running
+  150  k top nodes
+  151  minikube addons list
+  152  k top pods
+  153  k top nodes
+  154  k get pods -n otel | grep -vi running
+  155  k get ns
+  156  k delete ns otel
+  157  k get ns
+  158  k get all -n otel
+  159  k get ns
+  160  df -h
+  161  free -m
+  162  df -h
+  163  k get ns
+  164  k top nodes
+  165  minikube status
+  166  minikube status --help
+  167  minikube status -l
+  168  minikube status -l nodes
+  169  minikube status -n pucminas-m02
+  170  minikube status -n pucminas-m03
+  171  minikube node --help
+  172  minikube node add --help
+  173  k get ns
+  174  docker ps
+  175  minikube status
+  176  minikube stop
+  177  minikube remove pucminas
+  178  minikube delete pucminas
+  179  minikube --help
+  180  minikube delete -p pucminas
+  181  docker image ls
+  182  minikube start -p pucminas -n 3 --memory=4096
+  183  k get nodes -o wide
+  184  k get nodes
+  185  minikube profile pcuminas
+  186  k get pods -A
+  187  minikube status
+  188  minikube status -p pucminas
+  189  minikube profile -p pucminas
+  190  minikube status
+  191  minikube profile list
+  192  minikube -p pucminas
+  193  minikube profile -p pucminas
+  194  minikube -p pucminas
+  195  minikube profile list
+  196  minikube profile --help
+  197  minikube profile pucminas
+  198  minikube status
+  199  k get pods -A
+  200  helm list
+  201  helm repo list
+  202  helm install otel-demo -n otel open-telemetry/opentelemetry-demo
+  203  helm install otel-demo -n otel open-telemetry/opentelemetry-demo --create-namespace -n otel
+  204  k get pods -n otel
+  205  helm list
+  206  helm repo add chaos-mesh https://charts.chaos-mesh.org
+  207  helm repo list
+  208  # Default to /var/run/docker.sock
+  209  helm install chaos-mesh chaos-mesh/chaos-mesh -n=chaos-mesh --version 2.7.0
+  210  helm install chaos-mesh chaos-mesh/chaos-mesh --create-namespace -n=chaos-mesh --version 2.7.0
+  211  k get pods -A
+  212  k get pods -n chaos-mesg
+  213  k get pods -n chaos-mesh
+  214  k get pods -n chaos-mesh o wide
+  215  k get pods -n chaos-mesh -o wide
+  216  k get pods -n otel
+  217  k get pods -n chaos-mesh -o wide
+  218  helm list -n chaos-mesh
+  219  helm uninstall chaos-mesh
+  220  helm uninstall chaos-mesh -n chaos-mesh
+  221  k get pods -n chaos-mesh -o wide
+  222  helm install chaos-mesh chaos-mesh/chaos-mesh --create-namespace -n=chaos-mesh --version 2.7.1
+  223  helm install chaos-mesh chaos-mesh/chaos-mesh --create-namespace -n=chaos-mesh
+  224  k get pods -n chaos-mesh -o wide
+  225  helm uninstall chaos-mesh -n chaos-mesh
+  226  helm install chaos-mesh chaos-mesh/chaos-mesh --create-namespace -n=chaos-mesh --version 2.6.5
+  227  k get pods -n chaos-mesh -o wide
+  228  helm uninstall chaos-mesh -n chaos-mesh
+  229  helm install chaos-mesh chaos-mesh/chaos-mesh --create-namespace -n=chaos-mesh --version 2.7.0 -set controllerManager.leaderElection.enabled=false
+  230  helm install chaos-mesh chaos-mesh/chaos-mesh --create-namespace -n=chaos-mesh --version 2.7.0 --set controllerManager.leaderElection.enabled=false
+  231  k get pods -n chaos-mesh -o wide
+  232  k describe pods -n chaos-mesh chaos-controller-manager-c8f76674d-8xn5q
+  233  df -h
+  234  k get secrets -n chaos-mesh
+  235  k get pods -n chaos-mesh -o wide
+  236  k logs -n chaos-mesh chaos-controller-manager-c8f76674d-8xn5q
+  237  helm uninstall -n otel otel-demo
+  238  k get pods -n chaos-mesh -o wide
+  239  k get pods -A
+  240  helm uninstall chaos-mesh -n chaos-mesh
+  241  k get pods -A
+  242  minkube stop
+  243  minikube stop
+  244  minikube status
+  245  minikube start
+  246  df -h
+  247  docker image list
+  248  docker image ls
+  249  df -h
+  250  cd /tmp/
+  251  ll
+  252  df -h
+  253  du -hs .
+  254  sudo su -
+  255  minikube status
+  256  k get pods -A
+  257  helm install chaos-mesh chaos-mesh/chaos-mesh --create-namespace -n=chaos-mesh --version 2.7.0 --set controllerManager.leaderElection.enabled=false
+  258  k get pods -n chaos-mesh
+  259  helm install otel-demo -n otel open-telemetry/opentelemetry-demo --create-namespace -n otel
+  260  k get pods -A
+  261  kubectl port-forward svc/my-otel-demo-frontendproxy 8080:8080
+  262  kubectl port-forward svc/otel-demo-frontendproxy 8080:8080
+  263  kubectl port-forward svc/otel-demo-frontendproxy 8080:8080 -n otel
